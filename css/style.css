@@ -1,0 +1,198 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* NAVEGADOR */
+.encabezado {
+    background-color: blueviolet;
+
+}
+
+.encabezado h1 {
+    color: darkgoldenrod;
+    text-align: center;
+
+}
+
+.listanav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* PORTADA */
+.portada h2 {
+    background-image: url(../imag/portada.jpg);
+    background-size: cover;
+    background-position: none;
+    height: 300px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-size: 20px;
+}
+
+.separador {
+    background-color: blueviolet;
+    height: 30px;
+}
+
+/* SECCION NOTICIAS */
+
+.seccionlomasdestacado h2 {
+    color: blueviolet;
+    font-size: large;
+    margin: 20px;
+
+}
+
+.seccionnoticias h2 {
+    color: red;
+    font-size: large;
+    margin: 20px;
+}
+
+.seccionnoticias h3 {
+    color: blue;
+
+}
+
+.seccionnoticias a {
+    color: black;
+    text-decoration: none;
+}
+
+.articulouno {
+    margin: 20px;
+    background-image: url(../imag/imagen-lolla.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.articulouno h2 {
+    color: blueviolet;
+    font-size: large;
+
+}
+
+.articulouno p {
+    color: black;
+}
+
+.articulouno h3 {
+    color: blue;
+}
+
+.articulodos {
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+.articulodos figure img {
+    width: 250px;
+    margin: 10px;
+}
+
+.articulodos h2 {
+    color: red;
+}
+
+.articulotres {
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+.articulotres figure img {
+    margin: 10px;
+    width: 250px;
+
+}
+
+.articulocuatro {
+    margin: 20px;
+    background-color: aliceblue;
+}
+
+.articulocuatro figure img {
+    width: 250px;
+    margin: 10px;
+}
+
+.piedepagina{
+    display: flex;
+    gap: 40px;
+    margin: 10px;
+}
+
+.piedepagina ul li{
+    color: darkgoldenrod;
+    font-size: small;
+    list-style-type: none;
+}
+
+.piedepagina a{
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+.piedepagina h2{
+    color: darkgoldenrod;
+    font-size: medium;
+}
+
+
+
+/* PAGINA CONTACTO */
+
+.titulocontacto {
+    color: gold;
+}
+
+.contacto {
+    color: blueviolet;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.formulario label {
+    color: aliceblue;
+}
+
+/* PAGINA ALBUM */
+
+.tituloalbum {
+    color: gold;
+}
+
+.album {
+    color: blueviolet;
+}
+
+/* PAGINA TOUR */
+
+.titulotour {
+    color: gold;
+}
+
+.tour {
+    color: blueviolet;
+}
+
+/* PAGINA MUSICA */
+
+.titulomusica {
+    color: gold;
+}
+
+.musica {
+    color: blueviolet;
+}
