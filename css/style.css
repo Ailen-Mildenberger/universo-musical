@@ -47,6 +47,10 @@ body {
 .navegador {
     display: none;
 }
+a :hover{
+    color: blue;
+    text-decoration: underline;
+}
 
 /* PORTADA */
 .portada h2 {
@@ -54,7 +58,7 @@ body {
     background-size: cover;
     background-position: none;
     height: 300px;
-    width: 320px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -188,10 +192,13 @@ body {
 .redessocialesiconos i {
     color: blueviolet;
     font-size: 15px;
-
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
     /* RESPONSIVE---TABLET---HEADER*/
     .iconouno {
@@ -200,6 +207,9 @@ body {
 
     .navegador {
         display: block;
+    }
+    .listanav :hover{
+        color: darkgoldenrod;
     }
 
     .headerform {
@@ -243,8 +253,9 @@ body {
 
     /* RESPONSIVE---TABLET---PORTADA */
     .portada h2 {
-        width: 768px;
+
         height: 500px;
+        width: 100%;
         font-size: 40px;
         color: blueviolet;
     }
@@ -285,6 +296,82 @@ body {
         font-size: 20px;
         line-height: 25px;
     }
+}
+
+@media (min-width: 1024px) {
+    /* RESPONSIVE---DESKTOP--ENCABEZADO */
+    .iconouno{
+        display: none;
+    }
+    .headerform{
+        display: none;
+    }
+    .navegador{
+        display: block;
+    }
+    .listanav{
+        display: flex;
+        list-style-type: none;
+        gap: 90px;
+    }
+    .listanav a{
+        text-decoration: none;
+        color: black;
+    }
+    .listanav :hover{
+        color: darkgoldenrod;
+    }
+    .encabezado{
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+    }
+    .encabezado h1{
+        margin-left: 0%;
+    }
+    .portada h2{
+        font-size: 40px;
+        height: 800px;
+    }
+    /* RESPONSIVE---DESKTOP---SECCION NOTICIAS */
+    .seccionnoticias article a :hover{
+        color: blue;
+        text-decoration: underline;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10% 50% 50% 50%;
+    }
+    .articulouno{
+        height: 85%;
+    }
+    .noticiauno{
+        display: flex;
+    }
+    .noticiados{
+        display: flex;
+    }
+    .noticiatres{
+        display: flex;
+    }
+
+/* RESPONSIVE---DESKTOP--FOOTER */
+    .piedepagina {
+        gap: 500px;
+    }
+
+    .redes {
+        line-height: 30px;
+    }
+
+    .redessocialesiconos i {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
 }
 
 /* PAGINA CONTACTO */
