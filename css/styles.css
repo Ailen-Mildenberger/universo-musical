@@ -1,0 +1,564 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imag/fondo-estilo.png);
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.separadordelfooter {
+  background-color: blueviolet;
+  height: 10px;
+}
+
+footer {
+  display: flex;
+}
+
+.piedepagina {
+  display: flex;
+}
+.piedepagina ul li {
+  color: darkgoldenrod;
+  font-size: 15px;
+  list-style-type: none;
+}
+.piedepagina a {
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+.piedepagina h2 {
+  color: blueviolet;
+  font-size: 20px;
+}
+.piedepagina h2 a {
+  color: blueviolet;
+}
+
+.redessocialesiconos {
+  margin-top: 12px;
+  height: 20px;
+  width: 5px;
+  border-radius: 50px;
+  padding: 40px;
+}
+.redessocialesiconos i {
+  color: blueviolet;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .piedepagina {
+    gap: 300px;
+  }
+  .redes {
+    margin-top: 1px;
+  }
+}
+@media (min-width: 1024px) {
+  .piedepagina {
+    gap: 400px;
+  }
+  .piedepagina h2 {
+    font-size: 25px;
+  }
+  .piedepagina h2 a {
+    font-size: 25px;
+  }
+  .piedepagina ul li {
+    font-size: 20px;
+  }
+  .redessocialesiconos i {
+    font-size: 20px;
+  }
+  .listafooter {
+    margin-top: 15px;
+  }
+  .redes {
+    margin-top: 15px;
+  }
+}
+.navbar {
+  position: sticky;
+}
+
+.nav-link:hover {
+  color: darkgoldenrod;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  color: darkgoldenrod;
+}
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.portada h1 {
+  background-image: url(../imag/portada.jpg);
+  background-size: cover;
+  background-position: none;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: blueviolet;
+  font-size: 20px;
+}
+
+.seccionlomasdestacado h2 {
+  color: blueviolet;
+  font-size: large;
+  margin: 20px;
+}
+
+.seccionnoticias h2 {
+  color: red;
+  font-size: large;
+  margin: 20px;
+}
+
+.seccionnoticias h3 {
+  color: cornflowerblue;
+}
+
+.seccionnoticias a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.articulouno {
+  margin: 20px;
+  background-image: url(../imag/imagen-lolla.jpg);
+  background-size: cover;
+  height: 400px;
+}
+.articulouno h2 {
+  color: blueviolet;
+  font-size: large;
+}
+.articulouno p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.articulouno h3 {
+  color: cornflowerblue;
+}
+
+.articulodos {
+  background-color: blueviolet;
+  margin: 20px;
+}
+.articulodos figure img {
+  width: 250px;
+  margin: 10px;
+}
+.articulodos h2 {
+  color: red;
+}
+
+.articulotres {
+  background-color: blueviolet;
+  margin: 20px;
+}
+.articulotres figure img {
+  margin: 10px;
+  width: 250px;
+}
+
+.articulocuatro {
+  margin: 20px;
+  background-color: blueviolet;
+}
+.articulocuatro figure img {
+  width: 250px;
+  margin: 10px;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .portada h1 {
+    height: 500px;
+    width: 100%;
+    font-size: 40px;
+    color: blueviolet;
+  }
+  .ultimasnoticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 20%;
+  }
+  .articulodos {
+    grid-column: span 2;
+  }
+  .noticiauno {
+    display: flex;
+  }
+  .articulotres figure img {
+    margin-left: 50px;
+  }
+  .articulocuatro figure img {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1100px) {
+  .portada h1 {
+    font-size: 40px;
+    height: 800px;
+  }
+  .seccionnoticias article a :hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10% 50% 50% 50%;
+  }
+  .articulouno {
+    height: 85%;
+  }
+  .noticiauno {
+    display: flex;
+  }
+  .noticiados {
+    display: flex;
+  }
+  .noticiatres {
+    display: flex;
+  }
+}
+.tour {
+  color: blueviolet;
+  margin: 10px;
+  font-size: 0, 5rem;
+}
+
+.subtitulotour {
+  color: blue;
+  margin: 10px;
+}
+
+.primercontenedorbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imag/taylor.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.primercontenedorbutton a {
+  text-decoration: none;
+  color: blue;
+}
+
+.segundocontenedorbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imag/theweeknd.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.segundocontenedorbutton a {
+  text-decoration: none;
+  color: blue;
+}
+
+.toursarticles {
+  color: aliceblue;
+  margin: 10px;
+}
+
+.button {
+  background-color: rgba(139, 0, 139, 0.214);
+  width: 50px;
+}
+.button:hover {
+  transform: scale(1, 2);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .toursarticles {
+    display: flex;
+  }
+  .articletaylor {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1100px) {
+  .tour {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .subtitulotour {
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+  .secciontour {
+    margin: 20px;
+  }
+  .toursarticles {
+    display: flex;
+    gap: 200px;
+  }
+  .segundocontenedorbutton {
+    width: 400px;
+  }
+  .primercontenedorbutton {
+    width: 400px;
+  }
+}
+.musica {
+  font-size: 40px;
+  color: blueviolet;
+}
+
+.subtitulomusica {
+  color: cornflowerblue;
+}
+
+.seccionmusica {
+  margin-left: 5px;
+}
+
+article p {
+  color: azure;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.musicauno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imag/musicauno.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+.musicados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imag/musicados.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+.musicatres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imag/musicatres.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+.musicacuatro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imag/musicacuatro.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+.button {
+  width: 80px;
+}
+.button:hover {
+  transform: scale(1, 2);
+}
+.button a {
+  text-decoration: none;
+  color: black;
+}
+.button a:hover {
+  color: darkgoldenrod;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lomasescuchado {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 30px;
+  }
+  .musicapop {
+    display: flex;
+    gap: 120px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1100px) {
+  .lomasescuchado {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 30px;
+  }
+  .musicapop {
+    display: flex;
+    gap: 120px;
+    margin-bottom: 50px;
+  }
+  .musicauno {
+    width: 500px;
+    height: 300px;
+  }
+  .musicados {
+    width: 500px;
+    height: 300px;
+  }
+  .musicatres {
+    width: 500px;
+    height: 300px;
+  }
+  .musicacuatro {
+    width: 400px;
+    height: 300px;
+  }
+}
+.album {
+  margin-left: 10px;
+  color: blueviolet;
+}
+
+.primeralbum h3 {
+  margin-left: 10px;
+  color: cornflowerblue;
+}
+.primeralbum p {
+  margin-left: 10px;
+}
+.primeralbum ul {
+  list-style-type: none;
+  color: blueviolet;
+}
+.primeralbum ul li:hover {
+  color: red;
+}
+.primeralbum figure img {
+  margin-left: 50px;
+}
+
+.segundoalbum {
+  margin-left: 10px;
+}
+.segundoalbum h3 {
+  color: cornflowerblue;
+}
+.segundoalbum ul {
+  list-style-type: none;
+  color: blueviolet;
+}
+.segundoalbum ul li:hover {
+  color: red;
+}
+.segundoalbum figure img {
+  margin-left: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cancionesgorillaz {
+    display: flex;
+  }
+  .cancionesgorillaz figure img {
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 300px;
+  }
+  .cancioneslana {
+    display: flex;
+  }
+  .cancioneslana figure img {
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 300px;
+  }
+}
+@media (min-width: 1100px) {
+  .cancionesgorillaz {
+    display: flex;
+  }
+  .cancionesgorillaz ul {
+    font-size: 20px;
+  }
+  .cancionesgorillaz figure img {
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 400px;
+  }
+  .cancioneslana {
+    display: flex;
+  }
+  .cancioneslana ul {
+    font-size: 20px;
+  }
+  .cancioneslana figure img {
+    margin-top: 70px;
+    margin-right: 30px;
+    width: 500px;
+  }
+}
+.contacto {
+  color: blueviolet;
+  text-align: center;
+  font-size: 30px;
+}
+
+.formulario {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formulario label {
+  color: cornflowerblue;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  border-radius: 25px;
+  padding: 5px;
+  background-color: aquamarine;
+  margin-bottom: 15px;
+  outline: none;
+}
+input::placeholder, textarea::placeholder {
+  color: cornflowerblue;
+}
+
+/*# sourceMappingURL=styles.css.map */

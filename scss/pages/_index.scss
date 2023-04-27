@@ -1,0 +1,158 @@
+.portada h1 {
+    background-image: url(../imag/portada.jpg);
+    background-size: cover;
+    background-position: none;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+
+.seccionlomasdestacado h2 {
+    color: $color-primario;
+    font-size: large;
+    margin: 20px;
+}
+
+.seccionnoticias h2 {
+    color: red;
+    font-size: large;
+    margin: 20px;
+}
+
+.seccionnoticias h3 {
+    color: $color-secundario;
+}
+
+.seccionnoticias a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articulouno {
+    margin: 20px;
+    background-image: url(../imag/imagen-lolla.jpg);
+    background-size: cover;
+    height: 400px;
+
+    & h2 {
+        color:$color-primario;
+        font-size: large;
+    }
+    & p {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    & h3 {
+        color: $color-secundario;
+    }
+}
+
+.articulodos {
+    background-color: $color-primario;
+    margin: 20px;
+
+    & figure img {
+        width: 250px;
+        margin: 10px;
+    }
+    & h2 {
+        color: red;
+    }
+}
+
+.articulotres {
+    background-color: $color-primario;
+    margin: 20px;
+
+    & figure img {
+        margin: 10px;
+        width: 250px;
+    }
+}
+
+.articulocuatro {
+    margin: 20px;
+    background-color:$color-primario;
+
+    & figure img {
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+a:hover {
+    color: $color-primario;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .portada h1 {
+        height: 500px;
+        width: 100%;
+        font-size: 40px;
+        color: blueviolet;
+    }
+
+    .ultimasnoticias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20% 20%;
+    }
+
+    .articulodos {
+        grid-column: span 2;
+    }
+
+    .noticiauno {
+        display: flex;
+    }
+
+    .articulotres figure img {
+        margin-left: 50px;
+    }
+
+    .articulocuatro figure img {
+        margin-left: 50px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .portada h1 {
+        font-size: 40px;
+        height: 800px;
+    }
+
+    .seccionnoticias article a :hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10% 50% 50% 50%;
+    }
+
+    .articulouno {
+        height: 85%;
+    }
+
+    .noticiauno {
+        display: flex;
+    }
+
+    .noticiados {
+        display: flex;
+    }
+
+    .noticiatres {
+        display: flex;
+    }
+}

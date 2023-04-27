@@ -1,0 +1,92 @@
+.tour {
+    color: $color-primario;
+    margin: 10px;
+    font-size: 0, 5rem;
+}
+
+.subtitulotour {
+    color: blue;
+    margin: 10px;
+}
+
+.primercontenedorbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imag/taylor.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    
+    & a{
+        text-decoration: none;
+        color: blue;
+        
+    }
+    
+}
+
+.segundocontenedorbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imag/theweeknd.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+
+    & a {
+        text-decoration: none;
+        color: blue;
+    }
+}
+.toursarticles {
+    color: aliceblue;
+    margin: 10px;
+}
+.button {
+    background-color: rgba(139, 0, 139, 0.214);
+    width: 50px;
+    &:hover {
+        transform: scale(1,2);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .toursarticles {
+        display: flex;
+    }
+    .articletaylor {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    .tour {
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    .subtitulotour {
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+    .secciontour {
+        margin: 20px;
+    }
+
+    .toursarticles {
+        display: flex;
+        gap: 200px;
+    }
+
+    .segundocontenedorbutton {
+        width: 400px;
+    }
+    .primercontenedorbutton {
+        width: 400px;
+    }
+    }
