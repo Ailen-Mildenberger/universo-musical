@@ -124,13 +124,13 @@ footer {
 
 .seccionlomasdestacado h2 {
   color: blueviolet;
-  font-size: large;
+  font-size: 30px;
   margin: 20px;
 }
 
 .seccionnoticias h2 {
   color: red;
-  font-size: large;
+  font-size: 30px;
   margin: 20px;
 }
 
@@ -145,6 +145,7 @@ footer {
 }
 
 .articulouno {
+  border-radius: 20px;
   margin: 20px;
   background-image: url(../imag/imagen-lolla.jpg);
   background-size: cover;
@@ -164,18 +165,17 @@ footer {
 
 .articulodos {
   background-color: blueviolet;
+  border-radius: 20px;
   margin: 20px;
 }
 .articulodos figure img {
   width: 250px;
   margin: 10px;
 }
-.articulodos h2 {
-  color: red;
-}
 
 .articulotres {
   background-color: blueviolet;
+  border-radius: 20px;
   margin: 20px;
 }
 .articulotres figure img {
@@ -184,8 +184,9 @@ footer {
 }
 
 .articulocuatro {
-  margin: 20px;
   background-color: blueviolet;
+  border-radius: 20px;
+  margin: 20px;
 }
 .articulocuatro figure img {
   width: 250px;
@@ -193,8 +194,8 @@ footer {
 }
 
 a:hover {
-  color: blueviolet;
-  text-decoration: none;
+  color: blue;
+  text-decoration: underline;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -406,6 +407,9 @@ article p {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .seccionmusica {
+    margin-left: 20px;
+  }
   .lomasescuchado {
     display: flex;
     gap: 80px;
@@ -418,6 +422,9 @@ article p {
   }
 }
 @media (min-width: 1100px) {
+  .seccionmusica {
+    margin-left: 70px;
+  }
   .lomasescuchado {
     display: flex;
     gap: 80px;

@@ -14,13 +14,13 @@
 
 .seccionlomasdestacado h2 {
     color: $color-primario;
-    font-size: large;
+    font-size: 30px;
     margin: 20px;
 }
 
 .seccionnoticias h2 {
     color: red;
-    font-size: large;
+    font-size: 30px;
     margin: 20px;
 }
 
@@ -35,6 +35,7 @@
 }
 
 .articulouno {
+    border-radius: 20px;
     margin: 20px;
     background-image: url(../imag/imagen-lolla.jpg);
     background-size: cover;
@@ -55,19 +56,18 @@
 
 .articulodos {
     background-color: $color-primario;
+    border-radius: 20px;
     margin: 20px;
 
     & figure img {
         width: 250px;
         margin: 10px;
     }
-    & h2 {
-        color: red;
-    }
 }
 
 .articulotres {
     background-color: $color-primario;
+    border-radius: 20px;
     margin: 20px;
 
     & figure img {
@@ -77,8 +77,9 @@
 }
 
 .articulocuatro {
-    margin: 20px;
     background-color:$color-primario;
+    border-radius: 20px;
+    margin: 20px;
 
     & figure img {
         width: 250px;
@@ -87,8 +88,8 @@
 }
 
 a:hover {
-    color: $color-primario;
-    text-decoration: none;
+    color: blue;
+    text-decoration: underline;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
