@@ -2,7 +2,7 @@
     & h5{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 50px;
-        color: $color-primario;
+        color: $color;
     }
 
     & p {
@@ -33,7 +33,7 @@
 }
 
 .articulouno {
-    width: 300px;
+    width: 500px;
     height: 500px;
     margin-left: 10px;
     border-radius: 20px;
@@ -62,7 +62,7 @@
 
     & figure img {
         width: 250px;
-        margin: 10px;
+        margin: 30px;
     }
 }
 
@@ -73,7 +73,7 @@
     padding: 10px;
 
     & figure img {
-        margin: 10px;
+        margin: 30px;
         width: 250px;
     }
 }
@@ -86,7 +86,7 @@
 
     & figure img {
         width: 250px;
-        margin: 10px;
+        margin: 30px;
     }
 }
 
