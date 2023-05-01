@@ -1,16 +1,14 @@
-.portada h1 {
-    background-image: url(../imag/portada.jpg);
-    background-size: cover;
-    background-position: none;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: blueviolet;
-    font-size: 20px;
-}
+.carousel {
+    & h5{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        color: $color-primario;
+    }
 
+    & p {
+        font-size: 20px;
+    }
+}
 
 .seccionlomasdestacado h2 {
     color: $color-primario;
@@ -35,11 +33,13 @@
 }
 
 .articulouno {
+    width: 300px;
+    height: 500px;
+    margin-left: 10px;
     border-radius: 20px;
-    margin: 20px;
     background-image: url(../imag/imagen-lolla.jpg);
     background-size: cover;
-    height: 400px;
+    padding: 20px;
 
     & h2 {
         color:$color-primario;
@@ -58,6 +58,7 @@
     background-color: $color-primario;
     border-radius: 20px;
     margin: 20px;
+    padding: 10px;
 
     & figure img {
         width: 250px;
@@ -69,6 +70,7 @@
     background-color: $color-primario;
     border-radius: 20px;
     margin: 20px;
+    padding: 10px;
 
     & figure img {
         margin: 10px;
@@ -80,6 +82,7 @@
     background-color:$color-primario;
     border-radius: 20px;
     margin: 20px;
+    padding: 10px;
 
     & figure img {
         width: 250px;
@@ -92,12 +95,11 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .portada h1 {
-        height: 500px;
-        width: 100%;
-        font-size: 40px;
-        color: blueviolet;
+@media (min-width: 768px) and (max-width: 1099px) {
+
+    .articulouno {
+        width: 750px;
+        padding: 20px;
     }
 
     .ultimasnoticias {
@@ -125,10 +127,6 @@ a:hover {
 }
 
 @media (min-width: 1100px) {
-    .portada h1 {
-        font-size: 40px;
-        height: 800px;
-    }
 
     .seccionnoticias article a :hover {
         color: blue;
@@ -142,7 +140,9 @@ a:hover {
     }
 
     .articulouno {
-        height: 85%;
+        padding: 20px;
+        width: 500px;
+        height: 1000px;
     }
 
     .noticiauno {
