@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(../imag/fondo-estilo.png);
+  background-color: black;
 }
 
 h2 {
@@ -21,8 +21,7 @@ h3 {
 }
 
 .separadordelfooter {
-  background-color: blueviolet;
-  height: 10px;
+  height: 20px;
 }
 
 footer {
@@ -201,6 +200,7 @@ a:hover {
 
 @media (min-width: 768px) and (max-width: 1099px) {
   .articulouno {
+    height: 900px;
     width: 750px;
     padding: 20px;
   }
@@ -235,7 +235,7 @@ a:hover {
   .articulouno {
     padding: 20px;
     width: 500px;
-    height: 1000px;
+    height: 1150px;
   }
   .noticiauno {
     display: flex;
@@ -250,7 +250,7 @@ a:hover {
 .tour {
   color: blueviolet;
   margin: 10px;
-  font-size: 0, 5rem;
+  font-size: 3rem;
 }
 
 .subtitulotour {
@@ -266,10 +266,7 @@ a:hover {
   background-size: cover;
   width: 350px;
   height: 300px;
-}
-.primercontenedorbutton a {
-  text-decoration: none;
-  color: darkgoldenrod;
+  border-radius: 25px;
 }
 
 .segundocontenedorbutton {
@@ -280,23 +277,25 @@ a:hover {
   background-size: cover;
   width: 350px;
   height: 300px;
-}
-.segundocontenedorbutton a {
-  text-decoration: none;
-  color: darkgoldenrod;
+  border-radius: 25px;
 }
 
 .toursarticles {
   color: aliceblue;
   margin: 10px;
+  cursor: default;
 }
 
 .button {
   background-color: rgba(139, 0, 139, 0.214);
-  width: 50px;
+  width: 70px;
+}
+.button a {
+  color: black;
+  text-decoration: none;
 }
 .button:hover {
-  transform: scale(1, 2);
+  transform: translateY(-4%);
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -334,76 +333,37 @@ a:hover {
   }
 }
 .musica {
-  font-size: 40px;
+  margin-left: 40px;
+  font-size: 3rem;
   color: blueviolet;
 }
 
-.subtitulomusica {
+.seccionmusica h3 {
+  margin-left: 20px;
   color: cornflowerblue;
 }
 
-.seccionmusica {
-  margin-left: 5px;
+.target {
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: blueviolet;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+}
+.target:hover {
+  transform: translateY(-3%);
 }
 
-article p {
-  color: aliceblue;
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
+.targetdos {
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: blueviolet;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
-
-.musicauno {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../imag/musicauno.jpg);
-  background-size: cover;
-  width: 350px;
-  height: 200px;
-}
-
-.musicados {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../imag/musicados.jpg);
-  background-size: cover;
-  width: 350px;
-  height: 200px;
-}
-
-.musicatres {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../imag/musicatres.jpg);
-  background-size: cover;
-  width: 350px;
-  height: 200px;
-}
-
-.musicacuatro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../imag/musicacuatro.jpg);
-  background-size: cover;
-  width: 350px;
-  height: 250px;
-}
-
-.button {
-  width: 80px;
-}
-.button:hover {
-  transform: scale(1, 2);
-}
-.button a {
-  text-decoration: none;
-  color: black;
-}
-.button a:hover {
-  color: darkgoldenrod;
+.targetdos:hover {
+  transform: translateY(-3%);
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -412,7 +372,7 @@ article p {
   }
   .lomasescuchado {
     display: flex;
-    gap: 80px;
+    gap: 120px;
     margin-bottom: 30px;
   }
   .musicapop {
@@ -422,12 +382,15 @@ article p {
   }
 }
 @media (min-width: 1100px) {
+  .musica {
+    margin-left: 90px;
+  }
   .seccionmusica {
     margin-left: 70px;
   }
   .lomasescuchado {
     display: flex;
-    gap: 80px;
+    gap: 120px;
     margin-bottom: 30px;
   }
   .musicapop {
@@ -435,33 +398,22 @@ article p {
     gap: 120px;
     margin-bottom: 50px;
   }
-  .musicauno {
-    width: 500px;
-    height: 300px;
-  }
-  .musicados {
-    width: 500px;
-    height: 300px;
-  }
-  .musicatres {
-    width: 500px;
-    height: 300px;
-  }
-  .musicacuatro {
-    width: 400px;
-    height: 300px;
-  }
 }
 .album {
   margin-left: 10px;
+  font-size: 3rem;
   color: blueviolet;
 }
 
+.primeralbum {
+  cursor: default;
+}
 .primeralbum h3 {
   margin-left: 10px;
   color: cornflowerblue;
 }
 .primeralbum p {
+  color: aliceblue;
   margin-left: 10px;
 }
 .primeralbum ul {
@@ -477,6 +429,7 @@ article p {
 }
 
 .segundoalbum {
+  cursor: default;
   margin-left: 10px;
 }
 .segundoalbum h3 {
@@ -488,6 +441,9 @@ article p {
 }
 .segundoalbum ul li:hover {
   color: red;
+}
+.segundoalbum p {
+  color: aliceblue;
 }
 .segundoalbum figure img {
   margin-left: 50px;
@@ -539,7 +495,8 @@ article p {
 .contacto {
   color: blueviolet;
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
+  margin-top: 30px;
 }
 
 .formulario {
@@ -551,22 +508,25 @@ article p {
 .formulario label {
   color: cornflowerblue;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
+  margin-top: 15px;
 }
 
-input, textarea {
+input,
+textarea {
   border-radius: 25px;
   padding: 5px;
   background-color: aquamarine;
   margin-bottom: 15px;
   outline: none;
 }
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: cornflowerblue;
 }
 

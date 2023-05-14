@@ -2,14 +2,16 @@
     position: sticky;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: darkgoldenrod;
     text-decoration: none;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 20px;
     color: darkgoldenrod;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
     }
 }

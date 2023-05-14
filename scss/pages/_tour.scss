@@ -1,7 +1,7 @@
 .tour {
     color: $color-primario;
     margin: 10px;
-    font-size: 0, 5rem;
+    font-size: 3rem;
 }
 
 .subtitulotour {
@@ -17,13 +17,7 @@
     background-size: cover;
     width: 350px;
     height: 300px;
-    
-    & a{
-        text-decoration: none;
-        color: darkgoldenrod;
-        
-    }
-    
+    border-radius: 25px;
 }
 
 .segundocontenedorbutton {
@@ -34,21 +28,26 @@
     background-size: cover;
     width: 350px;
     height: 300px;
-
-    & a {
-        text-decoration: none;
-        color: darkgoldenrod;
-    }
+    border-radius: 25px;
 }
+
 .toursarticles {
     color: aliceblue;
     margin: 10px;
+    cursor: default;
 }
+
 .button {
     background-color: rgba(139, 0, 139, 0.214);
-    width: 50px;
+    width: 70px;
+
+    & a {
+        color: black;
+        text-decoration: none;
+    }
+
     &:hover {
-        transform: scale(1,2);
+        transform: translateY(-4%);
     }
 }
 
@@ -57,6 +56,7 @@
     .toursarticles {
         display: flex;
     }
+
     .articletaylor {
         margin-left: 20px;
     }
@@ -67,6 +67,7 @@
     .secciontour {
         margin-left: 50px;
     }
+
     .tour {
         margin: 10px;
         margin-bottom: 20px;
@@ -89,7 +90,8 @@
     .segundocontenedorbutton {
         width: 400px;
     }
+
     .primercontenedorbutton {
         width: 400px;
     }
-    }
+}
